@@ -27,7 +27,7 @@ var (
 	sourceURL   string
 	components  []*Component
 	compMap     map[string]*Component
-	client      = &http.Client{Timeout: 10 * time.Second}
+	client      = &http.Client{Timeout: 0}
 	helpText    = `NAME:
     fpm - Flashpoint Component Manager (Linux Port)
 
